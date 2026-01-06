@@ -1,6 +1,6 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi } from '@voidzero-dev/vite-plus/test'
 import { render } from 'vitest-browser-react'
-import { page } from 'vitest/browser'
+import { page } from '@voidzero-dev/vite-plus/test/browser'
 import { Suspense } from 'react'
 
 vi.mock('@tanstack/react-router', async (importOriginal) => {

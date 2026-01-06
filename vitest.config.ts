@@ -1,8 +1,8 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from '@voidzero-dev/vite-plus'
 import viteReact from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
-import { playwright } from '@vitest/browser-playwright'
+import { playwright } from '@voidzero-dev/vite-plus/test/browser-playwright'
 
 export default defineConfig({
   plugins: [
