@@ -6,7 +6,7 @@
     "dev": "vite dev --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vite test run"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
@@ -30,15 +30,21 @@
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "@vitest/browser": "^4.0.16",
-    "@vitest/browser-playwright": "^4.0.16",
     "playwright": "^1.57.0",
     "@vitejs/plugin-react": "^5.0.4",
     "jsdom": "^27.0.0",
     "typescript": "^5.7.2",
-    "vite": "^7.1.7",
-    "vitest": "^4.0.16",
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
     "vitest-browser-react": "^2.0.2",
-    "web-vitals": "^5.1.0"
+    "web-vitals": "^5.1.0",
+    "@voidzero-dev/vite-plus": "latest"
+  },
+  "packageManager": "pnpm@10.27.0",
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+      "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+    }
   }
 }
