@@ -30,15 +30,16 @@
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "@vitest/browser": "^4.0.16",
-    "@vitest/browser-playwright": "^4.0.16",
+    "@vitest/browser": "^4.1.0",
+    "@vitest/browser-playwright": "^4.1.0",
     "playwright": "^1.57.0",
     "@vitejs/plugin-react": "^5.0.4",
     "jsdom": "^27.0.0",
     "typescript": "^5.7.2",
     "vite": "^7.1.7",
-    "vitest": "^4.0.16",
+    "vitest": "^4.1.0",
     "vitest-browser-react": "^2.0.2",
     "web-vitals": "^5.1.0"
-  }
+  },
+  "packageManager": "pnpm@10.32.1"
 }
