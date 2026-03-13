@@ -1,13 +1,13 @@
-import { defineConfig } from 'vitest/config'
-import viteReact from '@vitejs/plugin-react'
-import viteTsConfigPaths from 'vite-tsconfig-paths'
-import tailwindcss from '@tailwindcss/vite'
-import { playwright } from '@vitest/browser-playwright'
+import { defineConfig } from "vite-plus";
+import viteReact from "@vitejs/plugin-react";
+import viteTsConfigPaths from "vite-tsconfig-paths";
+import tailwindcss from "@tailwindcss/vite";
+import { playwright } from "vite-plus/test/browser-playwright";
 
 export default defineConfig({
   plugins: [
     viteTsConfigPaths({
-      projects: ['./tsconfig.json'],
+      projects: ["./tsconfig.json"],
     }),
     tailwindcss(),
     viteReact(),
@@ -17,7 +17,7 @@ export default defineConfig({
     browser: {
       enabled: true,
       provider: playwright(),
-      instances: [{ browser: 'chromium', headless: true }],
+      instances: [{ browser: "chromium", headless: true }],
     },
   },
-})
+});

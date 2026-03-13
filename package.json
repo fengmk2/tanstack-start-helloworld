@@ -3,10 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev --port 3000",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest run"
+    "dev": "vp dev --port 3000",
+    "build": "vp build",
+    "preview": "vp preview",
+    "test": "vp test run",
+    "prepare": "vp config"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
@@ -30,15 +31,15 @@
     "@types/node": "^22.10.2",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "@vitest/browser": "^4.0.16",
-    "@vitest/browser-playwright": "^4.0.16",
-    "playwright": "^1.57.0",
     "@vitejs/plugin-react": "^5.0.4",
     "jsdom": "^27.0.0",
+    "playwright": "^1.57.0",
     "typescript": "^5.7.2",
-    "vite": "^7.1.7",
-    "vitest": "^4.0.16",
+    "vite": "catalog:",
+    "vite-plus": "catalog:",
+    "vitest": "catalog:",
     "vitest-browser-react": "^2.0.2",
     "web-vitals": "^5.1.0"
-  }
+  },
+  "packageManager": "pnpm@10.32.1"
 }
